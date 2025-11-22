@@ -27,6 +27,7 @@ const HypervisorListBodyPre253 = `
                     "clflush"
                 ],
                 "topology": {
+                    "cells": 1,
                     "cores": 1,
                     "threads": 1,
                     "sockets": 4
@@ -57,7 +58,7 @@ const HypervisorListBodyPre253 = `
             "vcpus_used": 0
         },
         {
-            "cpu_info": "{\"arch\": \"x86_64\", \"model\": \"Nehalem\", \"vendor\": \"Intel\", \"features\": [\"pge\", \"clflush\"], \"topology\": {\"cores\": 1, \"threads\": 1, \"sockets\": 4}}",
+            "cpu_info": "{\"arch\": \"x86_64\", \"model\": \"Nehalem\", \"vendor\": \"Intel\", \"features\": [\"pge\", \"clflush\"], \"topology\": {\"cells\": 1, \"cores\": 1, \"threads\": 1, \"sockets\": 4}}",
             "current_workload": 0,
             "status": "enabled",
             "state": "up",
@@ -99,6 +100,7 @@ const HypervisorListBodyPage1 = `
                     "clflush"
                 ],
                 "topology": {
+                    "cells": 1,
                     "cores": 1,
                     "threads": 1,
                     "sockets": 4
@@ -142,7 +144,7 @@ const HypervisorListBodyPage2 = `
 {
     "hypervisors": [
         {
-            "cpu_info": "{\"arch\": \"x86_64\", \"model\": \"Nehalem\", \"vendor\": \"Intel\", \"features\": [\"pge\", \"clflush\"], \"topology\": {\"cores\": 1, \"threads\": 1, \"sockets\": 4}}",
+            "cpu_info": "{\"arch\": \"x86_64\", \"model\": \"Nehalem\", \"vendor\": \"Intel\", \"features\": [\"pge\", \"clflush\"], \"topology\": {\"cells\": 1, \"cores\": 1, \"threads\": 1, \"sockets\": 4}}",
             "current_workload": 0,
             "status": "enabled",
             "state": "up",
@@ -187,6 +189,7 @@ const HypervisorListWithParametersBody = `
                     "clflush"
                 ],
                 "topology": {
+                    "cells": 1,
                     "cores": 1,
                     "threads": 1,
                     "sockets": 4
@@ -227,7 +230,7 @@ const HypervisorListWithParametersBody = `
             "vcpus_used": 0
         },
         {
-            "cpu_info": "{\"arch\": \"x86_64\", \"model\": \"Nehalem\", \"vendor\": \"Intel\", \"features\": [\"pge\", \"clflush\"], \"topology\": {\"cores\": 1, \"threads\": 1, \"sockets\": 4}}",
+            "cpu_info": "{\"arch\": \"x86_64\", \"model\": \"Nehalem\", \"vendor\": \"Intel\", \"features\": [\"pge\", \"clflush\"], \"topology\": {\"cells\": 1, \"cores\": 1, \"threads\": 1, \"sockets\": 4}}",
             "current_workload": 0,
             "status": "enabled",
             "state": "up",
@@ -297,6 +300,7 @@ const HypervisorGetBody = `
                 "clflush"
             ],
             "topology":{
+                "cells":1,
                 "cores":1,
                 "threads":1,
                 "sockets":4
@@ -343,6 +347,7 @@ const HypervisorGetPost253Body = `
                 "clflush"
             ],
             "topology":{
+                "cells":1,
                 "cores":1,
                 "threads":1,
                 "sockets":4
@@ -473,6 +478,7 @@ var (
 				"clflush",
 			},
 			Topology: hypervisors.Topology{
+				Cells:   1,
 				Cores:   1,
 				Threads: 1,
 				Sockets: 4,
@@ -513,6 +519,7 @@ var (
 				"clflush",
 			},
 			Topology: hypervisors.Topology{
+				Cells:   1,
 				Cores:   1,
 				Threads: 1,
 				Sockets: 4,
@@ -553,6 +560,7 @@ var (
 				"clflush",
 			},
 			Topology: hypervisors.Topology{
+				Cells:   1,
 				Cores:   1,
 				Threads: 1,
 				Sockets: 4,
@@ -603,6 +611,7 @@ var (
 				"clflush",
 			},
 			Topology: hypervisors.Topology{
+				Cells:   1,
 				Cores:   1,
 				Threads: 1,
 				Sockets: 4,
